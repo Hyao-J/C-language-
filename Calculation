@@ -1,0 +1,16 @@
+#include"stdio.h"
+#define height 5   /*定义常量高度，后面的高度固定*/
+int main()
+{
+	int volume, width,  Long;  /*定义长方体体积、宽度、长度*/
+	int area;   /*定义面积*/
+	printf("长方体的高度 :%d\n", height);  /*显示高度*/
+	printf("请输入长度 ：");   /*显示*/
+		scanf_s("%d",& Long);  /*输出长方体的长度*/
+		printf("请输入宽度 :");
+		scanf_s("%d",& width);
+		volume = Long * width * height;  /*长方体体积的运算*/
+		area = 2 * (Long * width + Long * height + width * height);   /*长方体面积的运算*/
+		printf("长方体的体积 :%d \n", volume);   /*体积结果返回*/
+	    printf("长方体的面积 :%d\n", area);        /*面积结果返回*/
+}	
