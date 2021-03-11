@@ -14,3 +14,17 @@ int main()
 		printf("长方体的体积 :%d \n", volume);   /*体积结果返回*/
 	    printf("长方体的面积 :%d\n", area);        /*面积结果返回*/
 }	
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+	float PAI = 3.14;         //定义PAI的值
+	float r,V;                //定义半径和面积的变量
+	scanf_s("%f", &r);        //输入半径
+	V = PAI *r*r;             //计算
+	printf("圆的面积为: %.5f", V);   //显示结果，.5为保留小数点后5位
+}
